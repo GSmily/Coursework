@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1100px" />
+
+    <Button
+        android:id="@+id/dyers"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:onClick="onClickHandlerDyers"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="Dyers" />
+
+    <Button
+        android:id="@+id/moonPine"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:onClick="onClickHandlerMoonPine"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="Moon Pine" />
+
+    <Button
+        android:id="@+id/plumEstate"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:onClick="onClickHandlerPlumEstate"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="Plum Estate" />
+
+    <Button
+        android:id="@+id/ushimachi"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:onClick="onClickHandlerUshimachi"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="Ushimachi" />
+
+    </LinearLayout>

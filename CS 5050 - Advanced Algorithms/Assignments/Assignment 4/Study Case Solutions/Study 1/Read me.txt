@@ -1,0 +1,9 @@
+NOTE:
+My program runs very slowly on my computer so instead of finding the distance between the two sequences
+each with 16000+ characters I did 3/4 of each DNA sequence.  It took only 17 minutes to complete 3/4
+of the DNA sequence, however when I try to do all 16000+ characters it never seemed to finish.
+I also used PyCharm which made the output look a lot better than the .txt file formating with notepad.
+
+I used 12480 characters in each sequence alignment.
+
+The Distance Between The Two Sequences (Score) = 32764

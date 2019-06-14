@@ -1,0 +1,36 @@
+{% load static %}
+<html lang=en>
+	<head>
+		<title>Us-Burger Employee Portal</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style0.css' %}"/>
+	</head>
+
+	<body>
+
+		<header>
+            <a href="/">
+                <img src="{% static 'images/us_burger.png' %}"
+                     height="150">
+            </a>
+		</header>
+
+		<main>
+            <div class="server">
+                <a href="{% url 'restaurant:server' %}">Server Page</a>
+            </div>
+            <div class="cook">
+                <a href="{% url 'restaurant:cookOrder' %}">Cook Page</a>
+            </div>
+            <div class="manager">
+                <a href="{% url 'restaurant:ingredients' %}">Inventory Page</a>
+            </div>
+		</main>
+
+		<footer>
+            <p>© 2018 Us Burger, Inc.</p>
+            <p>us.burger@usu.edu</p>
+            <p><a href="https://github.com/jfairbourn96/team_us_3450">Us GitBurger</a></p>
+		</footer>
+
+	</body>
+</html>

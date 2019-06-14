@@ -1,0 +1,28 @@
+Overall I feel that my implementation of the algorithm and it's performance to be
+below par.  As soon as I try to run a whole DNA sequence (16000+ characters) my program
+takes a very long time to finish.  I left it going for about 3 hours with no luck before
+deciding to switch gears and focus on the other study cases.
+If I had more time to optimize the code I would be able to
+reduce how much memory was being used and also improve run time.
+
+The results I found were very interesting when comparing all the different
+DNA sequences in each of the studies:
+
+Study 1 shows that our DNA is very similar (a high score) to that of the
+Neanderthal.
+
+Study 2 was fascinating to me, and shows that there are indeed differences
+in our DNA between various continents around the world, although they are
+very small differences.
+
+Study 3 (with the data I was able to collect) shows that our DNA is closer
+to Chimpanzees and Gorillas than the other primates.
+
+A properly optimized version of this algorithm has huge scientific impact.
+DNA sequences are massive, and if we want to find similarities between two
+different strands, this algorithm is a very clever way to do so.  With
+two sequences inputted into this algorithm we can find similarities between
+various animals effectively and have actual proof of evolution.
+The Needleman-Wunsh Algorithm is one of the first applications of dynamic
+programming to compare DNA sequences and to this day is still widely used
+for optimal alignment.

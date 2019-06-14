@@ -1,0 +1,24 @@
+Gavin Browning
+A01887359
+CS 5050 Assignment 2 Report/Empirical Studies
+
+NOTE: For some reason I was unable to increase the objects past 30 for either the recursive solution or memoized solution.
+This is because after 30 objects the run time became way to long to gather any data. (Might be because of my low end PC)
+
+Using the recursive algorithm I found that after 30 objects it became infeasible to run the algorithm.
+For 10 objects the recursive algorithm was faster than the memoized version.
+For the 20 and 30 object range the memoized version was much faster than recursive version.
+The third test is where I increased the knapsack sizes to both be 200 and made m = 100.
+These changes made the runtime a lot longer than the previous memoized test.
+An interesting note that I found was that for both memoized tests when n = 20, it had a faster runtime
+than 10 objects (49.76 s faster for m = 50, 20.56 s faster for m = 100).
+I think the reason for this is because after the first runtime of n = 10 it caches the outcomes, so
+when it runs again when n = 20 it has many of the solutions already and significantly reduces the time it takes.
+The reason why a cache is so helpful in reducing runtime is because it saves the results and can call
+the results later rather than having to recalculate every single solution.  
+This is a very useful optimization technique when working with algorithms to speed up run time at the
+cost of storing the results.
+
+See tables.png for all the empirical data I found.
+See graph1.png, graph2.png, and graph3.png for the graphs.
+I used python 3 for my algorithm.

@@ -1,0 +1,61 @@
+City scape : 1
+Method Used: Static
+Charger 1's (Red) Total Revenue:  21243
+Charger 2's (Purple) Total Revenue:  18081
+Charger 3's (Green) Total Revenue:  38310
+Total Revenue:  77634
+
+City scape : 2
+Method Used: Static
+Charger 1's (Red) Total Revenue:  26658
+Charger 2's (Purple) Total Revenue:  25092
+Charger 3's (Green) Total Revenue:  29880
+Total Revenue:  81630
+
+----------------------------------------------------------------------
+
+City scape : 1
+Method Used: Dynamic_Close
+Charger 1's (Red) Total Revenue:  3688.300000000014
+Charger 2's (Purple) Total Revenue:  3627.6000000000095
+Charger 3's (Green) Total Revenue:  58050.50000001974
+Total Revenue:  65366.40000001976
+
+City scape : 2
+Method Used: Dynamic_Close
+Charger 1's (Red) Total Revenue:  2989.6500000000156
+Charger 2's (Purple) Total Revenue:  3629.100000000017
+Charger 3's (Green) Total Revenue:  57656.250000019405
+Total Revenue:  64275.00000001944
+
+----------------------------------------------------------------------
+
+City scape : 1
+Method Used: Dynamic_Cheap
+Charger 1's (Red) Total Revenue:  24981.90000000008
+Charger 2's (Purple) Total Revenue:  25610.150000000074
+Charger 3's (Green) Total Revenue:  24169.30000000004
+Total Revenue:  74761.3500000002
+
+City scape : 2
+Method Used: Dynamic_Cheap
+Charger 1's (Red) Total Revenue:  28112.800000000087
+Charger 2's (Purple) Total Revenue:  27432.250000000055
+Charger 3's (Green) Total Revenue:  35336.55000000078
+Total Revenue:  90881.60000000092
+
+----------------------------------------------------------------------
+
+City scape : 1
+Method Used: Dynamic_Close_Cheap
+Charger 1's (Red) Total Revenue:  30337.40000000049
+Charger 2's (Purple) Total Revenue:  29095.50000000053
+Charger 3's (Green) Total Revenue:  29006.100000000202
+Total Revenue:  88439.00000000122
+
+City scape : 2
+Method Used: Dynamic_Close_Cheap
+Charger 1's (Red) Total Revenue:  39577.80000000216
+Charger 2's (Purple) Total Revenue:  38926.75000000166
+Charger 3's (Green) Total Revenue:  39849.400000002344
+Total Revenue:  118353.95000000615

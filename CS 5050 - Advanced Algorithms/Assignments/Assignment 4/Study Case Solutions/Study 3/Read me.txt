@@ -1,0 +1,14 @@
+NOTE:
+My program runs very slowly on my computer so instead of finding the pairwise of 16000+ characters
+in each sequence with eachother, I did 1/4 of each DNA sequence to save time in order to 
+compleate all 21 comparisons and to be able to turn this assignment in on time.
+I also used PyCharm which made the output look a lot better than the .txt file formating with notepad.
+
+I used 4200 characters in each sequence alignment.
+
+Human Vs Baboon: Distance Between The Two Sequences (Score) = 8711
+Human Vs Bonobo: Distance Between The Two Sequences (Score) = 10940
+Human Vs Chimpanzee 1: Distance Between The Two Sequences (Score) = 10987
+Human Vs Chimpanzee 2: Distance Between The Two Sequences (Score) = 11041
+Human Vs Gorilla: Distance Between The Two Sequences (Score) = 10852
+Human Vs Gorilla (Western Lowland): Distance Between The Two Sequences (Score) = 10832

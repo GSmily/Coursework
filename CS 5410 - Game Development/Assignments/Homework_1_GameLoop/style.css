@@ -1,0 +1,71 @@
+div.flex-box {
+    display: flex;
+    flex: 1;
+}
+
+div#top-bar {
+    font-size: 64px;
+    font-weight: bold;
+    background-color: rgb(255, 150, 0);
+    height: 10vh;
+    border-top: 6px solid black;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+div#center {
+    background-color: whitesmoke;
+    height: 700px;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+}
+
+div#left-side {
+    font-size: 24px;
+    flex-direction: column;
+    min-width: 70vw;
+    overflow-y: auto;
+    border-right: 6px solid black;
+    justify-content: left;
+    padding: 2%;
+}
+
+div#right-side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2%;
+}
+
+label {
+    font-size: 24px;
+    float: left;
+    margin-bottom: 10px
+}
+
+input {
+    font-size: 24px;
+    float: right;
+    margin-bottom: 10px
+}
+
+input#add-button {
+    width: 50%;
+    justify-content: center;
+}
+
+div#bottom-bar {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(255, 150, 0);
+    height: 10vh;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    justify-content: center;
+    align-items: center;
+}

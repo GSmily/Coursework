@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CS_3200_HW2</string>
+    <string name="progressBar_Mesaage">Downloading Image . . .</string>
+</resources>

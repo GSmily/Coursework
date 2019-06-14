@@ -1,0 +1,62 @@
+Gavin Browning
+A01887359
+Assignment 8: String Matching
+
+I used Python 3 to implement this assignment.
+I created the log of m vs. the log of time graphs using gnuplot. 
+
+These are the tests I used to make sure the string matching algorithms were working correctly
+and returned the same answers:
+
+    Test 1:
+    text_1 = "AABAACAADAABAABA"
+    pattern_1 = "AABA"
+
+    Test 2:
+    text_2 = "AAAAAAAAAAAAAAAB"
+    pattern_2 = "AAAB"
+
+    Test 3:
+    text_3 = "AAAAAAAAAAAAAAAA"
+    pattern_3 = "AAAA"
+
+Test 1 was selected because it makes sure the algorithms get both index 9 and index 12 which have the
+pattern matching the text on top of both indexes (the last character and first character).
+
+Test 2 was selected because it is an example of a worst case for the KMP algorithm, where there are
+many matching characters followed by a mismatching character.
+
+Test 3 was selected because it is an example of a worst case for the BM algorithm, where all the
+characters of the text and pattern are the same.
+
+Empirical Studies:
+
+For all of the studies I ended up making the max possible pattern size (m) to be a little less than the 
+text size (n).  This let me see interesting results towards the end when trying to match
+large patterns to the given text.
+
+Shakespeare string:
+The KMP algorithm was overall the quickest (0.4 to 1.3 second range) followed by the
+Naive algorithm (1.07 to 2.2 second range) which was followed by the BM algorithm (1.6 to 2.8 second range).
+Towards the end the Naive algorithm became faster than the KMP algorithm.
+
+DNA string:
+Similar to the Shakespeare string, the KMP algorithm was overall the quickest (0.01 to 0.04 second range) followed by
+the Naive algorithm (0.04 to 0.1 second range) which was followed by the BM algorithm (0.13 to 0.16 second range).
+Towards the very end the Naive algorithm became a little bit faster than the KMP algorithm.
+
+Random Binary string:
+Similar to the Shakespeare and DNA strings, the KMP algorithm was overall the quickest (1.09 to 2.6 second range)
+followed by the Naive algorithm (1.7 to 4.9 second range) which was followed by the BM algorithm (2.8 to 6.2 second range).
+Towards the very end the Naive algorithm became a little bit faster than the KMP algorithm.
+
+Regular Binary String:
+This study was the most abnormal from the rest of the studies. The fastest algorithm overall was the
+KMP algorithm (1.06 to 2.6 second range). The Naive algorithm was the second fastest algorithm (3.8 to 577.7 second range)
+and fluctuated from lower to higher runtimes from 8192 to 8388608 pattern size (m). The slowest algorithm but not by much
+is the BM algorithm (4.8 to 622.0 second range) which gradually increases till it starts to decrease at the 32768 pattern size.
+
+Overall my BM algorithm might have been incorrect as it seems to be slower than the naive algorithm.  This might be because of
+a memory limitation causing the algorithm to slow down more than it should.  As for why the Naive algorithm for the
+regular binary string is so speratic might be because of how the regular binary string have long lengths of 0s and 1s.
+

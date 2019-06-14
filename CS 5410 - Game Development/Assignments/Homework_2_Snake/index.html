@@ -1,0 +1,47 @@
+<!-- CS-5410 Homework #2 -->
+<!-- Gavin Browning -->
+<!-- A01887359 -->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Snake Game</title>
+
+</head>
+<body>
+    <div id = "center" class = "flex-box">
+        <div id = "left-side" class = "flex-box">
+            <canvas id = "id-canvas"
+                width = "750px" height = "750px"
+                style = "width: 750px; height: 750px;">
+            </canvas>
+        </div>
+        <div id = "right-side" class = "flex-box">
+            <button onclick="MyGame.graphics.newGame();">New Game</button>
+            <label>---------------------------</label>
+            <label id = "currentScore"></label>
+            <label>---------------------------</label>
+            <label>Highscores:</label>
+            <label id = "first"></label>
+            <label id = "second"></label>
+            <label id = "third"></label>
+            <label id = "fourth"></label>
+            <label id = "fifth"></label>
+            <label>---------------------------</label>
+            <label>Developed By:</label>
+            <label>Gavin Browning</label>
+        </div>
+    </div>
+
+
+    <script>
+        let MyGame = {};
+    </script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src = "scripts/inputHandling.js"></script>
+    <script src = "scripts/graphics.js"></script>
+    <script src = "scripts/gameLogic.js"></script>
+</body>
+</html>

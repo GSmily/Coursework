@@ -1,0 +1,66 @@
+% Gavin Browning
+% A01887359
+
+/angle 35 def
+/len 5.7 def
+
+/X {
+	1 sub /N exch def
+	N 0 eq
+	{ F }
+	{ N N N N N N N N X F B L F X X E B R F X X E B L X F F E B R X F F E F X }
+	ifelse
+} def
+
+/Y {
+	1 sub /N exch def
+	N 0 eq
+	{ F }
+	{ N N N N N F Y B L Y X F E B R Y X F E }
+	ifelse
+} def
+
+/Z {
+	1 sub /N exch def
+	N 0 eq
+	{ F }
+	{ N N N N F Z B L Y F E B R Y F E F F Z }
+	ifelse
+} def
+
+/F { len 0 rlineto } def
+
+/B {
+	1 1 1 setrgbcolor
+	currentpoint stroke moveto
+	gsave
+} def
+
+/E { stroke grestore } def
+
+/R {
+	angle neg rotate
+} def
+
+/L {
+	angle rotate
+} def
+
+% black background
+newpath
+-5000 -5000 moveto
+0 10000 rlineto
+10000 0 rlineto
+0 -10000 rlineto
+-10000 0 rlineto
+closepath
+fill
+
+newpath
+306 50 moveto
+90 rotate
+6 Z
+stroke
+grestore
+
+showpage

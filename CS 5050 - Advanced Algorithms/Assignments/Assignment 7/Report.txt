@@ -1,0 +1,19 @@
+Gavin Browning
+A01887359
+Assignment 7: Polynomial Multiplication Three
+
+I used Python 3 to implement this algorithm.
+I created the scatterplot and the linear regression graph of the log of n vs. the log of time using gnuplot. 
+
+The value of n where the FFT and N^2 lines cross is around 75 meaning a problem size less than 75 would be faster
+using the N^2 algorithm.
+The value of n where the FFT and D+C lines cross is around 2 meaning a problem size less than 2 would be faster
+using the D+C algorithm.
+
+The performance line for the FFT is nearly linear, and that makes sense because it is a O(nlogn) algorithm.
+Everytime n doubles the time does aswell which would make the line linear.
+
+I decided to make the limit on the CPU time 10 minutes.
+N^2 maximum problem size that can be solved within 10 minutes: 8192
+D+C maximum problem size that can be solved within 10 minutes: 16384
+FFT maximum problem size that can be solved within 10 minutes: 1048576

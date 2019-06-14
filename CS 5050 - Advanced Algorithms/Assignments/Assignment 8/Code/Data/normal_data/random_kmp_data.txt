@@ -1,0 +1,72 @@
+Pattern Size: 1
+Run Time: 1.8800926208496094 seconds
+
+Pattern Size: 2
+Run Time: 1.7837424278259277 seconds
+
+Pattern Size: 4
+Run Time: 1.3037874698638916 seconds
+
+Pattern Size: 8
+Run Time: 1.2700955867767334 seconds
+
+Pattern Size: 16
+Run Time: 1.1631219387054443 seconds
+
+Pattern Size: 32
+Run Time: 1.1420133113861084 seconds
+
+Pattern Size: 64
+Run Time: 1.0957844257354736 seconds
+
+Pattern Size: 128
+Run Time: 1.1120593547821045 seconds
+
+Pattern Size: 256
+Run Time: 1.105987310409546 seconds
+
+Pattern Size: 512
+Run Time: 1.1743803024291992 seconds
+
+Pattern Size: 1024
+Run Time: 1.211949110031128 seconds
+
+Pattern Size: 2048
+Run Time: 1.1966137886047363 seconds
+
+Pattern Size: 4096
+Run Time: 1.2434256076812744 seconds
+
+Pattern Size: 8192
+Run Time: 1.2614421844482422 seconds
+
+Pattern Size: 16384
+Run Time: 1.218773365020752 seconds
+
+Pattern Size: 32768
+Run Time: 1.2258434295654297 seconds
+
+Pattern Size: 65536
+Run Time: 1.2317883968353271 seconds
+
+Pattern Size: 131072
+Run Time: 1.2441318035125732 seconds
+
+Pattern Size: 262144
+Run Time: 1.2724990844726562 seconds
+
+Pattern Size: 524288
+Run Time: 1.303117275238037 seconds
+
+Pattern Size: 1048576
+Run Time: 1.4282536506652832 seconds
+
+Pattern Size: 2097152
+Run Time: 1.5154614448547363 seconds
+
+Pattern Size: 4194304
+Run Time: 1.8337600231170654 seconds
+
+Pattern Size: 8388608
+Run Time: 2.6019887924194336 seconds
+

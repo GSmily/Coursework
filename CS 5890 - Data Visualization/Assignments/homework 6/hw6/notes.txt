@@ -1,0 +1,23 @@
+Gavin Browning
+A01887359
+Assignment 6
+
+Part VI: Voter Shit Visualization Design Notes
+
+Visualization I:
+This line chart visualization is useful in showing the trends in how one or
+more states have shifted politically in time.  It allows you to select
+what state(s) to be viewed from either clicking on the state tile or
+through brushing the electoral vote chart.  Each state is separated by different
+hues, and you can also select whether you want to look at democratic or republican
+party percentage.  I personally think this visualization is straight forward
+and shows the party % change trends well.
+
+Visualization II:
+This multi-bar chart visualization is useful in showing the trends in how one state
+has shifted politically in time.  It allows you to select what state to see a trend
+by clicking on the state tile.  It allows you to view both the republican and democrat
+party% at the same time, and each party year is colored based on a color scale.
+(lighter red low R%, darker red high R%, lighter blue D%, darker blue D%).
+It is similar to the popular vote% chart but it allows you to view more than
+one year at a time which helps in seeing trends.

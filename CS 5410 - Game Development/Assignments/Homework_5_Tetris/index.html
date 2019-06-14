@@ -1,0 +1,130 @@
+<!-- CS-5410 Homework-5 Tetris -->
+<!-- Gavin Browning -->
+<!-- A01887359 -->
+
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Tetris</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "Styles/style.css">
+</head>
+
+<body onload = "MyGame.game.initialize();">
+    <div id = "game">
+
+        <div id = "main-menu" class = "screen">
+            <div id = "title">
+                <h1 id = "game-title">TETRIS</h1>
+            </div>
+            <ul class = "menu">
+                <li><button id = "id-new-game">New&nbsp;Game</button></li>
+                <li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+                <li><button id = "id-controls">Controls</button></li>
+                <li><button id = "id-credits">Credits</button></li>
+            </ul>
+        </div>
+
+        <div id = "game-play" class = "screen">
+            <canvas id = "text-canvas" width = "0" height = "0"></canvas>
+            <div class = "canvas-row">
+                <div class = "canvas-column1">
+                    <canvas id = "id-canvas" width = "200" height = "400"></canvas>
+                </div>
+
+                <div class = "canvas-column2">
+                    <canvas id = "next-piece-canvas" width = "40" height = "40"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div id = "gameover" class = "screen">
+			<h1>GAME&nbsp;OVER</h1>
+			<ul class = "menu">
+				<li><button id = "id-gameover-back">Main Menu</button></li>
+			</ul>
+		</div>
+
+        <div id = "high-scores" class = "screen">
+            <h1>HIGH SCORES</h1>
+            <ol>
+                <li id = "first"></li>
+                <li id = "second"></li>
+                <li id = "third"></li>
+                <li id = "fourth"></li>
+                <li id = "fifth"></li>
+            </ol>
+            <ul class = "menu">
+                <li><button id = "id-high-scores-back">Back</button></li>
+            </ul>
+        </div>
+
+        <div id = "controls" class = "screen">
+            <h1>CONTROLS:</h1>
+            <div class = "row">
+                <div class = "column1">
+                        <li id = "moveLeft"></li>
+                        <li id = "moveRight"></li>
+                        <li id = "rotateCCW"></li>
+                        <li id = "rotateCW"></li>
+                        <li id = "softDrop"></li>
+                        <li id = "hardDrop"></li>
+                        <li id = "playMusic"></li>
+                </div>
+                <div class = "column2">
+                    <ul class = "controls-buttons">
+                        <li><button id = "moveLeft-button"></li>
+                        <li><button id = "moveRight-button"></li>
+                        <li><button id = "rotateCCW-button"></li>
+                        <li><button id = "rotateCW-button"></li>
+                        <li><button id = "softDrop-button"></li>
+                        <li><button id = "hardDrop-button"></li>  
+                        <li><button id = "playMusic-button"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class = "menu">
+                <li><button id = "id-controls-back">Back</button></li>
+            </ul>
+        </div>
+
+        <div id = "credits" class = "screen">
+            <h1>CREDITS</h1>
+            <p>Game Developed By:</p>
+            <p>Gavin Browning</p>
+            <ul class = "menu">
+                <li><button id = "id-credits-back">Back</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        let MyGame = {
+            screens : {},
+            input: {},
+            objects: {},
+            render: []
+        };
+    </script>
+
+    <script src = "Scripts/Utility/input-keyboard.js"></script>
+    <script src = "Scripts/Utility/sound.js"></script>
+    <script src = "Scripts/Utility/random.js"></script>
+
+    <script src = "Scripts/graphics.js"></script>  
+    <script src = "Scripts/game.js"></script>
+    <script src = "Scripts/gameplay.js"></script>
+
+    <script src = "Scripts/Menuing/mainMenu.js"></script>
+    <script src = "Scripts/Menuing/highScores.js"></script>
+    <script src = "Scripts/Menuing/controls.js"></script>
+    <script src = "Scripts/Menuing/credits.js"></script>
+    <script src = "Scripts/Menuing/gameOver.js"></script>
+
+</body>
+
+</html>

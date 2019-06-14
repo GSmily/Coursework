@@ -1,0 +1,39 @@
+Problem Size: 32
+Run Time: 0.014984369277954102 seconds
+
+Problem Size: 64
+Run Time: 0.0449373722076416 seconds
+
+Problem Size: 128
+Run Time: 0.1378469467163086 seconds
+
+Problem Size: 256
+Run Time: 0.41257643699645996 seconds
+
+Problem Size: 512
+Run Time: 1.2417564392089844 seconds
+
+Problem Size: 1024
+Run Time: 3.8451128005981445 seconds
+
+Problem Size: 2048
+Run Time: 11.563948154449463 seconds
+
+Problem Size: 4096
+Run Time: 35.27067708969116 seconds
+
+Problem Size: 8192
+Run Time: 103.82054853439331 seconds
+
+Problem Size: 16384
+Run Time: 312.42466402053833 seconds
+
+Problem Size: 32768
+Run Time: 973.4794728755951 seconds
+
+Problem Size: 65536
+Run Time: 2992.691062450409 seconds
+
+Problem Size: 131072
+Run Time: 8644.576290607452 seconds
+

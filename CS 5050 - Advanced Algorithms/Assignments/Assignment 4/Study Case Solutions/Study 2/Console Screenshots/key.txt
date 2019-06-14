@@ -1,0 +1,10 @@
+ 1: Africa - Algeria
+ 2: America (North) - Mixteca - Baja
+ 3: America (South) - Guarani
+ 4: Asia - Aboriginal Malay (Temuan)
+ 5: Australia - Aborigine
+ 6: Europe - Abazin
+ 7: Melanesia - Bougainville
+ 8: Micronesia - Kapingamarangi Atoll
+ 9: Middle East - Isreal (Bedouin)
+10: Polynesia - Cook Islander

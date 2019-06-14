@@ -1,0 +1,9 @@
+As I was testing various sizes of O(n^2) I found the following:
+
+n = 4200  -> Run Time = 2.19 Minutes
+n = 8340  -> Run Time = 7.77 Minutes
+n = 12480 -> Run Time = 17.1 Minutes
+n = 16560 -> Run Time = ??? Minutes
+
+We know that this algorithm is very memory heavy and with my current system and/or program
+n = 12480 is close to the maximum size for n.  

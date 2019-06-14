@@ -1,0 +1,208 @@
+.tetrisColor1 {
+    color:#D20F10;
+}
+
+.tetrisColor2 {
+    color: #EF7C06;
+}
+
+.tetrisColor3 {
+    color: #E8D820;
+}
+
+.tetrisColor4 {
+    color: #49B312;
+}
+
+.tetrisColor5 {
+    color: #309EFF;
+}
+
+.tetrisColor6 {
+    color: #7D21CB;
+}
+
+body {
+    font-family: Arial Black;
+    margin: 0;
+    background-image:url("../Assets/Background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    overflow:hidden;
+    text-align: center;
+}
+
+#id-canvas {
+    border: solid .2em #FFFFFF;
+    height: 80vh;
+}
+
+#next-piece-canvas {
+    border: solid .2em #FFFFFF;
+    height: 16vh;
+}
+
+.canvas-column1 {
+    float: left;
+    width: 60%;
+    list-style: none;
+    text-align: right;
+}
+
+.canvas-column2 {
+    float: left;
+    width: 10%;
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    color: #008DFF;
+}
+
+h2 {
+    text-align: center;
+    color: #008DFF;
+}
+
+#game-title {
+    font-size: 4em;
+    text-align: Center;
+    margin: 8vh;
+    margin-bottom: 10vh;
+    padding: none;
+}
+
+#game-sub-title {
+    font-size: 1.5em;
+    margin-bottom: 10vh;
+}
+
+#game {
+    margin: auto;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+#game .screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#game .screen.active {
+    display: block;
+}
+
+#main-menu {
+    display: flex;
+    align-content: center;
+}
+
+ul.menu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.menu li {
+    margin: 0.8em 0;
+}
+
+ul.menu li button {
+    font-family: Arial;
+    font-size: 1em;
+    color: #FFFFFF;
+    width: 10em;
+    height: 1.5em;
+    background: #0404B4;
+    border: 0.1em solid rgb(255, 255, 255);
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.menu li button:hover {
+    background: #008DFF;
+}
+
+ul.menu li button:active {
+    color: #CECEF6;
+    background: rgb(0, 0, 0);
+}
+
+#high-scores ol {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#high-scores ol {
+    font-size: 1.5em;
+}
+
+#controls ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1em;
+}
+
+#controls ol {
+    list-style: none;
+    text-align: right;
+}
+
+ul.controls-buttons li button {
+    font-family: Arial;
+    font-size: .7em;
+    color: #FFFFFF;
+    width: 7em;
+    height: 1.5em;
+    background: #0404B4;
+    border: 0.1em solid rgb(255, 255, 255);
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.controls-buttons li button:hover {
+    background: #008DFF;
+}
+
+ul.controls-buttons li button:active {
+    color: #CECEF6;
+    background: rgb(0, 0, 0);
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    list-style: none;
+    text-align: right;
+} 
+
+.column2 {
+    float: left;
+    width: 15%;
+    list-style: none;
+} 
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#credits p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+

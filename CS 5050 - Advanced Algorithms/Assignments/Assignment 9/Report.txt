@@ -1,0 +1,52 @@
+Gavin Browning
+A01887359
+Assignment 9: NP complete problem TSP
+
+I used Python 3 to implement this assignment.
+I created the color map graph using microsoft excel.
+
+First I will compare the optimal solution length with what was found by the five methods:
+(You can also see the results in Assignment 9 Findings.xlsx)
+
+Problem		Optimal		Hill Climb Reverse	Greedy		Hill Climb Swap		Branch and Bound	Backtracking
+xqf131		564		586			601		1061			1163			1163
+xqg237		1019		1132			1203		2316			2809			2809
+pma343		1368		1499			1710		4773			2783			2783
+pka379		1332		1432			1631		5281			2542			2542
+bcl380		1621		1847			1899		4994			9769			9769
+pbl395		1281		1441			1565		3944			5322			5322
+pbk411		1343		1546			1676		4464			5778			5778
+pbn423		1365		1585			1803		4535			6437			6437
+pbm436		1443		1701			1726		4456			7230			7230
+xql662		2513		4347			3094		11360			11894			11894
+
+In order to get a proper best-found tour for both of the hill climb algorithms, I ended up taking
+an average of 10 tests for each problem.  This gives an increase in accuracy of what we can expect
+the hill climb algorithms to produce, as the results can fluctuate from test to test.
+
+The order from best to worse is (although some of the problems are outliers):
+Hill Climb Reverse
+Greedy
+Hill Climb Swap
+Branch and Bound
+Backtracking
+
+The consistently better algorithm is the hill climb reverse mutation algorithm.
+It is the most accurate of the algorithms except for the last problem which was of
+size 662 nodes.  It seems like for most of the algorithms, the more nodes in the problem
+the less accurate the best-found tour length is.
+
+Here is what algorithm I would recommend using for each problem according to my findings:
+xqf131	Hill Climb Reverse
+xqg237	Hill Climb Reverse
+pma343	Hill Climb Reverse
+pka379	Hill Climb reverse
+bcl380	Hill Climb reverse
+pbl395	Hill Climb reverse
+pbk411	Hill Climb reverse
+pbn423	Hill Climb reverse
+pbm436	Hill Climb reverse
+xql662	Greedy
+
+So all but the last problem use the Hill Climb reverse mutation algorithm.
+Use greedy on the last problem.

@@ -1,0 +1,123 @@
+% Gavin Browning
+% A01887359
+
+/hypotrochoid
+{
+	% x(t) = ((a-b)*cos(t)) + (d*cos(((a-b)*t)/b))
+	% y(t) = ((a-b)*sin(t)) - (d*sin(((a-b)*t)/b))
+
+	1 dict begin
+
+	/r exch def % number of rotations
+	/d exch def % distance from the center of the small circle
+	/b exch def % small circle radius
+	/a exch def % big circle radius
+
+	/t 0 def % counter
+	360 r mul {
+
+		% x(t)
+		a b sub t cos mul % ((a-b)*cos(t))
+		a b sub t mul b div cos d mul % (d*cos(((a-b)*t)/b))
+		add
+		/x exch def % x(t)
+
+		% y(t)
+		a b sub t sin mul % ((a-b)*sin(t))
+		a b sub t mul b div sin d mul % (d*sin(((a-b)*t)/b))
+		sub
+		/y exch def % y(t)
+
+		0 t eq
+			{ x y moveto }
+			{ x y lineto }
+		ifelse
+
+		/t t 1 add def
+	} repeat
+	end
+} def
+
+306 396 translate  % moves the center of the image
+
+% black background
+newpath
+-5000 -5000 moveto
+0 10000 rlineto
+10000 0 rlineto
+0 -10000 rlineto
+-10000 0 rlineto
+closepath
+fill
+
+0 10 360
+{
+	newpath
+	0 0 moveto
+
+	dup 360 div exch 10 div exch 0
+	setrgbcolor
+	
+	410 480 190 10 hypotrochoid
+	stroke
+	
+	50 rotate
+} for
+
+0 10 360
+{
+	newpath
+	0 0 moveto
+
+	dup 360 div exch 10 div exch 0
+	setrgbcolor
+	
+	200 240 80 10 hypotrochoid
+	stroke
+	
+	50 rotate
+} for
+
+0 10 360
+{
+	newpath
+	0 0 moveto
+
+	dup 360 div exch 10 div exch 0
+	setrgbcolor
+	
+	100 120 50 10 hypotrochoid
+	stroke
+	
+	50 rotate
+} for
+
+0 10 360
+{
+	newpath
+	0 0 moveto
+
+	dup 360 div exch 10 div exch 0
+	setrgbcolor
+	
+	50 60 25 10 hypotrochoid
+	stroke
+	
+	50 rotate
+} for
+
+0 10 360
+{
+	newpath
+	0 0 moveto
+
+	dup 360 div exch 10 div exch 0
+	setrgbcolor
+	
+	25 30 12.5 10 hypotrochoid
+	stroke
+	
+	50 rotate
+} for
+
+showpage

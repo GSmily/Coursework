@@ -1,0 +1,27 @@
+div.flex-box {
+    display: flex;
+    flex: 1;
+}
+
+div#left-side {
+    max-width: 750px
+}
+
+div#right-side {
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    padding: 2%;
+}
+
+button {
+    font-size: 24px;
+    float: right;
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}

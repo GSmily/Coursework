@@ -1,0 +1,18 @@
+NOTE:
+My program runs very slowly on my computer so instead of finding the pairwise of 16000+ characters
+in each sequence with eachother, I did 1/4 of each DNA sequence to save time in order to 
+compleate all 45 comparisons and to be able to turn this assignment in on time.
+
+I used 4200 characters in each sequence alignment.
+
+Below is a detailed list of each DNA sequence and their origins that I used:
+ 1: Africa - Algeria
+ 2: America (North) - Mixteca - Baja
+ 3: America (South) - Guarani
+ 4: Asia - Aboriginal Malay (Temuan)
+ 5: Australia - Aborigine
+ 6: Europe - Abazin
+ 7: Melanesia - Bougainville
+ 8: Micronesia - Kapingamarangi Atoll
+ 9: Middle East - Isreal (Bedouin)
+10: Polynesia - Cook Islander

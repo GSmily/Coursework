@@ -1,0 +1,62 @@
+<!-- CS-5410 Homework #3 -->
+<!-- Gavin Browning -->
+<!-- A01887359 -->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Maze Game</title>
+
+</head>
+<body>
+    <div id = "center">
+        <div id = "left-side">
+            <canvas id = "maze-canvas" width = "750px" height = "750px"
+            style = "border:1px solid black;">
+            </canvas>
+            <canvas id = "player-canvas" width = "750px" height = "750px"
+            style = "border:1px solid black;">
+            </canvas>
+            <canvas class = "bread" id = "bread-canvas" width = "750px" height = "750px"
+            style = "visibility: hidden; border:1px solid black;">
+            </canvas>
+            <canvas class = "path" id = "path-canvas" width = "750px" height = "750px"
+            style = "visibility: hidden; border:1px solid black;">
+            </canvas>
+        </div>
+        <div id = "right-side">
+            <button id = "new-maze" onclick = "MyGame.graphics.newGame();">New Maze</button>
+            <button id = "five" onclick = "MyGame.main.initialize(150);">5x5</button>
+            <button id = "ten" onclick = "MyGame.main.initialize(75);">10x10</button>
+            <button id = "fifteen" onclick = "MyGame.main.initialize(50);">15x15</button>
+            <button id = "twenty" onclick = "MyGame.main.initialize(37.5);">20x20</button>
+
+            <label id = "currentTime">Time: </label>
+
+            <label id = "currentScore">Score: </label>
+
+            <label id = "highscores">Highscores:</label>
+            <label id = "first">1st: </label>
+            <label id = "second">2nd: </label>
+            <label id = "third">3rd: </label>
+            <label id = "fourth">4th: </label>
+            <label id = "fifth">5th: </label>
+
+            <label id = "developed">Developed By:</label>
+            <label id = "name">Gavin Browning</label>
+        </div>
+    </div>
+
+
+    <script>
+        let MyGame = {};
+    </script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src = "scripts/inputHandling.js"></script>
+    <script src = "scripts/graphics.js"></script>
+    <script src = "scripts/gameLogic.js"></script>
+    <script src = "scripts/mazeLogic.js"></script>
+</body>
+</html>

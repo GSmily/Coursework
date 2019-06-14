@@ -1,0 +1,12 @@
+{
+  "name": "homework_5_tetris",
+  "version": "1.0.0",
+  "description": "Things I did not finish in time:\r \tAttract Mode",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}

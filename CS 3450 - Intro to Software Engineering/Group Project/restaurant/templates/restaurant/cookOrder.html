@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Us Burger Orders</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="60">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+<style>
+    body, html {
+        height: 100%
+    }
+</style>
+<body>
+
+<!-- Header -->
+<header class="w3-center w3-black">
+    <a href="{% url 'restaurant:employeePortal' %}">
+        <img src="{% static 'images/us_burger.png' %}"
+             height="150">
+    </a>
+    <div class="w3-padding">
+        <span class="w3-tag w3-jumbo">
+            View Orders
+        </span>
+    </div>
+</header>
+
+<!-- Orders to Cook Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge">
+    <div class="w3-content">
+        <h1 class="w3-center w3-xxxlarge"><u>Orders To Cook:</u></h1>
+
+        <div class="w3-row w3-border w3-border-dark-grey">
+            <hr>
+                {% for order in order_list %}
+                    {% if order.confirmed and not order.cooking %}
+
+            <b style="margin-left: 15px">
+                Order #{{ order }}
+            </b>
+
+            <form action="{% url 'restaurant:orderDetails' order.id %}" method="post">
+                {% csrf_token %}
+                <button class=" w3-tag w3-padding-0 w3-right w3-button w3-white"
+                        type="submit"
+                        style="width:30%; margin-right: 15px; margin-top: -60px">
+                    I'll cook this
+                </button>
+            </form>
+            <hr>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Orders Cooking Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge">
+    <div class="w3-content">
+        <h1 class="w3-center w3-xxxlarge"><u>Orders Cooking:</u></h1>
+
+        <div class="order w3-row w3-border w3-border-dark-grey">
+            <hr>
+            {% for order in order_list %}
+            {% if order.cooking and not order.cooked %}
+
+            <b style="margin-left: 15px">
+                Order #{{ order }}
+            </b>
+
+            <form action="{% url 'restaurant:orderDetails2' order.id %}" method="post">
+                {% csrf_token %}
+                <button class=" w3-tag w3-padding-0 w3-right w3-button w3-white"
+                        type="submit"
+                        style="width:30%; margin-right: 15px; margin-top: -60px">
+                    View Order
+                </button>
+            </form>
+            <hr>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>© 2018 Us Burger, Inc.</p>
+    <p>us.burger@usu.edu</p>
+    <p><a href="https://github.com/jfairbourn96/team_us_3450">Us GitBurger</a></p>
+</footer>
+
+</body>
+</html>
+
+
